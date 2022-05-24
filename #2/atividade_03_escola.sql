@@ -12,21 +12,22 @@ create table tb_alunos(
 id bigint auto_increment,
 nome varchar(255),
 data_nasc date,
-turma int,
+sala int,
 nota decimal(4,2),
 primary key(id)
 );
 
+select * from tb_alunos;
 -- exercicio 3 Insira nesta tabela no mínimo 8 dados (registros).
 
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Paulo Miklos", "1959-01-21", 1, 8.00);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Sérgio Britto", "1959-09-18", 1, 9.00);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Tony Bellotto", "1960-06-30", 2, 6.50);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Charles Gavin", "1960-07-09", 2, 5.50);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Arnaldo Antunes", "1960-09-02", 2, 9.00);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Marcelo Fromer", "1961-12-03", 3, 9.00);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Branco Mello", "1962-03-16", 3, 9.00);
-INSERT INTO tb_alunos (nome, data_nasc, turma, nota) VALUES ("Nando Reis", "1963-01-12", 3, 8.00);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Renan", 4.2,"1991-01-18", 3);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Jose", 5.2, "1991-01-18", 2);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Alfredo", 4.2, "1995-06-30", 4);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Pedro", 7.2, "1992-07-09", 2);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Rebeca", 8.2, "1989-09-02", 1);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Tonia", 2.5, "1985-12-03", 7);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Aragorn", 6, "1989-03-16", 2);
+INSERT INTO tb_alunos (nome, nota, data_nasc, sala) VALUES ("Legolas", 8, "1987-01-12", 5);
 
 -- exercicio 4 Faça um SELECT que retorne todes o/a(s) estudantes com a nota maior do que 7.0.
 
